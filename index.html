@@ -9,7 +9,7 @@
 <body>
 <div class="bg-orb o1"></div><div class="bg-orb o2"></div><div class="bg-orb o3"></div>
 
-<!-- LANDING -->
+
 <section id="landing" class="landing">
   <nav class="nav container">
     <div class="logo">Share<b>ly</b></div>
@@ -158,7 +158,7 @@
   </section>
 </section>
 
-<!-- AUTH -->
+
 <section id="auth" class="auth-screen hidden">
   <div class="auth-card">
     <div class="logo">Share<b>ly</b></div>
@@ -174,7 +174,7 @@
   </div>
 </section>
 
-<!-- APP -->
+
 <section id="app" class="app">
 <header class="appbar">
   <div style="display:flex;align-items:center;gap:14px"><button class="menu" onclick="toggleSidebar()">☰</button><div class="logo">Share<b>ly</b></div></div>
@@ -195,7 +195,7 @@
 </aside>
 
 <main class="content">
-<!-- DASHBOARD -->
+
 <section id="dashboard" class="page active">
 <div class="page-head"><div><h2 id="welcome">Good to see you.</h2><p>Your financial overview for this month.</p></div><button class="btn secondary" onclick="goById('expenses')">+ Add expense</button></div>
 <div class="grid4">
@@ -217,7 +217,7 @@
 </div>
 </section>
 
-<!-- PROFILE -->
+
 <section id="profile" class="page">
 <div class="page-head"><div><h2>Profile</h2><p>Personalize your Sharely account.</p></div></div>
 <div class="grid2">
@@ -239,7 +239,7 @@
 </div>
 </section>
 
-<!-- RENT -->
+
 <section id="rent" class="page">
 <div class="page-head"><div><h2>Rent Planner</h2><p>Build a rent plan that leaves space for savings and real-life costs.</p></div></div>
 <div class="grid2"><div class="card">
@@ -252,7 +252,7 @@
 <div class="card"><h3>Recommended rent</h3><div class="big gradient" id="rentResult">₹0</div><span id="rentStatus" style="color:var(--muted)">Waiting for details</span><div class="tip" id="rentAdvice">Your recommendation will consider both your chosen percentage and what remains after other costs and savings.</div></div></div>
 </section>
 
-<!-- EXPENSES -->
+
 <section id="expenses" class="page">
 <div class="page-head"><div><h2>Expense Tracker</h2><p>Add spending and watch your monthly total update instantly.</p></div><button class="btn secondary" onclick="goById('analytics')">View analytics →</button></div>
 <div class="grid2"><div class="card"><h3 style="margin-bottom:15px">Add expense</h3>
@@ -265,7 +265,6 @@
 <div class="card"><div class="section-title"><div><h3>All expenses</h3><small style="color:var(--muted)">This month</small></div><div class="big" style="font-size:25px" id="expenseTotal">₹0</div></div><div id="expenseList" class="list"></div></div></div>
 </section>
 
-<!-- ANALYTICS -->
 <section id="analytics" class="page">
 <div class="page-head"><div><h2>Analytics</h2><p>Turn your spending history into simple decisions.</p></div><button class="btn secondary" onclick="exportData()">Export summary</button></div>
 <div class="grid2"><div class="card"><div class="section-title"><h3>Expense comparison</h3><span style="color:var(--muted);font-size:12px">Current vs previous</span></div><div id="trendChart" class="chart"></div><div class="chart-labels"><span>Previous</span><span>Current</span></div></div>
@@ -273,7 +272,7 @@
 <div class="grid3" style="margin-top:16px"><div class="card"><h3>Biggest category</h3><div class="big" id="topCategory">—</div><p style="color:var(--muted);font-size:13px">Where most of your tracked spending goes.</p></div><div class="card"><h3>Average expense</h3><div class="big" id="avgExpense">₹0</div><p style="color:var(--muted);font-size:13px">Average amount per recorded transaction.</p></div><div class="card"><h3>Budget remaining</h3><div class="big" id="budgetRemaining">₹0</div><p style="color:var(--muted);font-size:13px">Income minus tracked expenses and savings goal.</p></div></div>
 </section>
 
-<!-- ROOMMATES -->
+
 <section id="roommates" class="page">
 <div class="page-head"><div><h2>Roommates</h2><p>Split shared costs clearly and keep everyone on the same page.</p></div></div>
 <div class="grid2"><div class="card"><h3 style="margin-bottom:15px">Household details</h3>
@@ -288,7 +287,7 @@
 <div class="card"><h3>Monthly household total</h3><div class="big gradient" id="houseTotal">₹0</div><div id="splitResults"></div></div></div>
 </section>
 
-<!-- GOALS -->
+
 <section id="goals" class="page">
 <div class="page-head"><div><h2>Purchase Goals</h2><p>Set a target for something you want to buy, and track how close you are.</p></div></div>
 <div class="grid2">
@@ -308,13 +307,13 @@
 </div>
 </section>
 
-<!-- ADVISOR -->
+
 <section id="advisor" class="page">
 <div class="page-head"><div><h2>AI Advisor</h2><p>Ask practical questions about your budget, rent and spending.</p></div></div>
 <div class="card"><div class="chat" id="chat"><div class="msg bot">Hi! I’m Sharely Advisor ✨ Tell me about your income, rent, savings goal or expenses and I’ll suggest a practical next step.</div></div><div class="chatbar"><input id="aiInput" placeholder="e.g. How can I reduce my food expenses?" onkeydown="if(event.key==='Enter')askAI()"><button class="btn primary" onclick="askAI()">→</button></div></div>
 </section>
 
-<!-- GUIDE -->
+
 <section id="learn" class="page">
 <div class="page-head"><div><h2>Expense Guide</h2><p>Small habits that make shared living easier.</p></div></div>
 <div class="grid3">
